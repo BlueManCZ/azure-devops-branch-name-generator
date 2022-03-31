@@ -20,6 +20,7 @@ button.addEventListener("click", () => {
         .toLowerCase()
         .replaceAll(":", "")
         .replaceAll("#", "")
+        .replaceAll("\"", "")
         .replaceAll(" ", "-")
         .replaceAll("/", "-")
         .replace(/--+/g, '-');
