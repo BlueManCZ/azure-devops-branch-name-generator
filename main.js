@@ -87,3 +87,8 @@ function waitForNewPage() {
 }
 
 waitForNewPage();
+
+document.addEventListener("mouseup", () => {
+    lastPage = "";
+    setTimeout(waitForNewPage, 1);
+});
